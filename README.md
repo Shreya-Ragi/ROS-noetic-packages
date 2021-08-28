@@ -35,7 +35,8 @@ catkin_make
 ```
 
 ## Running your own node in the created workspace
-Create a listener.py file and a talker.py file inside th src folder of your ros_basics folder:
+Create any node that you would like to run inside the src folder of your ros_basics folder.
+Here, a listener.py file and a talker.py file have been created to run in the new workspace:
 
 ### listener.py:
 ```py
@@ -97,7 +98,16 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
-
+Now change the permission of the new nodes to "Executable" using the command chmod:
+```bash
+chmod u+x ~/[file_location]/[file_name]
+```
+Where, u+x will grant the user permission to execute the file.
+```bash
+cd ..
+chmod u+x ~/catkin_ws/src/ros_basics/src/listener.py
+chmod u+x ~/catkin_ws/src/ros_basics/src/talker.py
+```
 Then, edit the CMakeLists.txt file and add the following:
 ```
 catkin_install_python(PROGRAMS src/talker.py src/listener.py
