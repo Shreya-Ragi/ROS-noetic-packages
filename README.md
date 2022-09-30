@@ -2,11 +2,11 @@
 This repository is a detailed guide on creating a ROS Package using catkin
 
 This README.md contains:
-- Creating a catkin workspace and a package inside it
+- Creating a package inside catkine workspace
 - Compiling the catkin workspace
-- Running your own node in the created workspace
+- Running your own node in the created package
 
-## Creating a catkin workspace and a package inside it
+## Creating a package inside catkin workspace
 This tutorial will demonstrate how to use catkin_create_pkg to create a new package.
 
 Upon opening the terminal, change to the source directory of the catkin workspace:
