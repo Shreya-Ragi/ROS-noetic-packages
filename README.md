@@ -119,6 +119,7 @@ catkin_install_python(PROGRAMS src/talker.py src/listener.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 ```
+NOTE: Change the message to be published according to the task.
 Save the changes.
 
 Now, to finally run your ROS node:
