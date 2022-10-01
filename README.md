@@ -41,7 +41,7 @@ Here, a listener.py file and a talker.py file have been created to run in the ne
 
 ### listener.py:
 ```py
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from std_msgs.msg import String
 
@@ -99,6 +99,8 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
+Remember to save both files.
+
 Now change the permission of the new nodes to "Executable" using the command chmod:
 ```bash
 chmod u+x ~/[file_location]/[file_name]
@@ -117,6 +119,7 @@ catkin_install_python(PROGRAMS src/talker.py src/listener.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 ```
+Save the changes.
 
 Now, to finally run your ROS node:
 
