@@ -11,7 +11,7 @@ This tutorial will demonstrate how to use catkin_create_pkg to create a new pack
 
 Upon opening the terminal, change to the source directory of the catkin workspace:
 ```bash
-cd catkin_ws/
+cd DNT_ws/
 cd src/
 ```
 
