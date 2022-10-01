@@ -36,8 +36,8 @@ catkin_make
 ```
 
 ## Running your own node in the created workspace
-Create any node that you would like to run inside the src folder of your ros_basics folder.
-Here, a listener.py file and a talker.py file have been created to run in the new workspace:
+Create any node that you would like to run inside the src folder of your stage3_yourname folder using the code editor.
+Here, a listener.py file and a talker.py file have been created to run in the new workspace using the code editor:
 
 ### listener.py:
 ```py
