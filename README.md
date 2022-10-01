@@ -99,7 +99,7 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
-NOTE: Change the message to be published according to the task.
+#### NOTE: Change the message to be published according to the task.
 Remember to save both files.
 
 Now change the permission of the new nodes to "Executable" using the command chmod:
