@@ -20,11 +20,11 @@ catkin_create_pkg requires you to give a a package name and optionally a few dep
 # catkin_create_pkg package_name depend1 depend2 depend3
 ```
 Now use catkin_create_pkg to create a new package called "stage3_yourname" which depends rospy and std_msgs:
-Replace "stage3_yourname" with your package name according to instructions
 ```bash
-catkin_create_pkg ros_basics rospy std_msgs
+catkin_create_pkg stage3_yourname rospy std_msgs
 ```
-This will create a folder named ros_basics which contains an src folder, a CMakeLists.txt file and a package.xml file.
+Replace "stage3_yourname" with your package name according to instructions
+This will create a folder named stage3_yourname which contains an src folder, a CMakeLists.txt file and a package.xml file.
 
 There are several other dependenices, like roscpp, that can be used based on your requirements while creating a package using catkin_create_pkg script.
 
