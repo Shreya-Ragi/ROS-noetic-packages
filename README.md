@@ -19,7 +19,8 @@ catkin_create_pkg requires you to give a a package name and optionally a few dep
 ```
 # catkin_create_pkg package_name depend1 depend2 depend3
 ```
-Now use catkin_create_pkg to create a new package called "ros_basics" which depends rospy and std_msgs:
+Now use catkin_create_pkg to create a new package called "stage3_yourname" which depends rospy and std_msgs:
+Replace "stage3_yourname" with your package name according to instructions
 ```bash
 catkin_create_pkg ros_basics rospy std_msgs
 ```
@@ -105,9 +106,11 @@ chmod u+x ~/[file_location]/[file_name]
 Where, u+x will grant the user permission to execute the file.
 ```bash
 cd ..
-chmod u+x ~/catkin_ws/src/ros_basics/src/listener.py
-chmod u+x ~/catkin_ws/src/ros_basics/src/talker.py
+chmod u+x ~/DNT_ws/src/stage3_yourname/src/listener.py
+chmod u+x ~/DNT_ws/src/stage3_yourname/src/talker.py
 ```
+Replace "stage3_yourname" with your package name.
+
 Then, edit the CMakeLists.txt file and add the following:
 ```
 catkin_install_python(PROGRAMS src/talker.py src/listener.py
@@ -123,12 +126,16 @@ roscore
 ```
 ### In a new terminal, run your listener node:
 ```bash
-rosrun ros_basics listener.py
+rosrun stage3_yourname listener.py
 ```
+Replace "stage3_yourname" with your package name.
+
 ### In another terminal, run your talker node:
 ```bash
-rosrun ros_basics talker.py
+rosrun stage3_yourname talker.py
 ```
+Replace "stage3_yourname" with your package name.
+
 If you followed the instructions correctly, you will have made a ROS package and run your own nodes in the created catkin workspace!
 
 For more ROS repositaries check out:
